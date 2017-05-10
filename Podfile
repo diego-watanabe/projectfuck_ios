@@ -4,5 +4,7 @@ inhibit_all_warnings!
 
 target 'projectfuck' do
   pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
 end
 

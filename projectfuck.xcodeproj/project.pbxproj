@@ -14,6 +14,7 @@
 		24CE88E31EC2A65F005ABC96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE88E11EC2A65F005ABC96 /* LaunchScreen.storyboard */; };
 		24CE88EE1EC2A65F005ABC96 /* projectfuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE88ED1EC2A65F005ABC96 /* projectfuckTests.swift */; };
 		24CE88F91EC2A65F005ABC96 /* projectfuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE88F81EC2A65F005ABC96 /* projectfuckUITests.swift */; };
+		24CE89071EC2B092005ABC96 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE89061EC2B092005ABC96 /* Marker.swift */; };
 		38052B8178AB8495D2DFF8F4 /* Pods_projectfuck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293A36E365EBA949F6FCEF19 /* Pods_projectfuck.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		24CE88F41EC2A65F005ABC96 /* projectfuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectfuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CE88F81EC2A65F005ABC96 /* projectfuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectfuckUITests.swift; sourceTree = "<group>"; };
 		24CE88FA1EC2A65F005ABC96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CE89061EC2B092005ABC96 /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		293A36E365EBA949F6FCEF19 /* Pods_projectfuck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projectfuck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB5985504770FBEA7ACAD71 /* Pods-projectfuck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectfuck.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectfuck/Pods-projectfuck.release.xcconfig"; sourceTree = "<group>"; };
 		C338AE0BBAD442D8E16311C0 /* Pods-projectfuck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectfuck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectfuck/Pods-projectfuck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		24CE88D71EC2A65F005ABC96 /* projectfuck */ = {
 			isa = PBXGroup;
 			children = (
+				24CE89081EC2B0FD005ABC96 /* Models */,
 				24CE88D81EC2A65F005ABC96 /* AppDelegate.swift */,
 				24CE88DA1EC2A65F005ABC96 /* ViewController.swift */,
 				24CE88DC1EC2A65F005ABC96 /* Main.storyboard */,
@@ -130,6 +133,14 @@
 				24CE88FA1EC2A65F005ABC96 /* Info.plist */,
 			);
 			path = projectfuckUITests;
+			sourceTree = "<group>";
+		};
+		24CE89081EC2B0FD005ABC96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24CE89061EC2B092005ABC96 /* Marker.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		28A6A6CE9BD43E6FD92FB3F2 /* Frameworks */ = {
@@ -336,6 +347,7 @@
 			files = (
 				24CE88DB1EC2A65F005ABC96 /* ViewController.swift in Sources */,
 				24CE88D91EC2A65F005ABC96 /* AppDelegate.swift in Sources */,
+				24CE89071EC2B092005ABC96 /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +594,7 @@
 				24CE88FF1EC2A65F005ABC96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24CE89001EC2A65F005ABC96 /* Build configuration list for PBXNativeTarget "projectfuckTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +603,7 @@
 				24CE89021EC2A65F005ABC96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24CE89031EC2A65F005ABC96 /* Build configuration list for PBXNativeTarget "projectfuckUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +612,7 @@
 				24CE89051EC2A65F005ABC96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
