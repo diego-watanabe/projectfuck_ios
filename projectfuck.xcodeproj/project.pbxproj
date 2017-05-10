@@ -14,6 +14,7 @@
 		24CE88E31EC2A65F005ABC96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE88E11EC2A65F005ABC96 /* LaunchScreen.storyboard */; };
 		24CE88EE1EC2A65F005ABC96 /* projectfuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE88ED1EC2A65F005ABC96 /* projectfuckTests.swift */; };
 		24CE88F91EC2A65F005ABC96 /* projectfuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE88F81EC2A65F005ABC96 /* projectfuckUITests.swift */; };
+		38052B8178AB8495D2DFF8F4 /* Pods_projectfuck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293A36E365EBA949F6FCEF19 /* Pods_projectfuck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		24CE88F41EC2A65F005ABC96 /* projectfuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectfuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CE88F81EC2A65F005ABC96 /* projectfuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectfuckUITests.swift; sourceTree = "<group>"; };
 		24CE88FA1EC2A65F005ABC96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293A36E365EBA949F6FCEF19 /* Pods_projectfuck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projectfuck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB5985504770FBEA7ACAD71 /* Pods-projectfuck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectfuck.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectfuck/Pods-projectfuck.release.xcconfig"; sourceTree = "<group>"; };
+		C338AE0BBAD442D8E16311C0 /* Pods-projectfuck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectfuck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectfuck/Pods-projectfuck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38052B8178AB8495D2DFF8F4 /* Pods_projectfuck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				24CE88EC1EC2A65F005ABC96 /* projectfuckTests */,
 				24CE88F71EC2A65F005ABC96 /* projectfuckUITests */,
 				24CE88D61EC2A65F005ABC96 /* Products */,
+				CBB07C83160E149D974E341D /* Pods */,
+				28A6A6CE9BD43E6FD92FB3F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = projectfuckUITests;
 			sourceTree = "<group>";
 		};
+		28A6A6CE9BD43E6FD92FB3F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				293A36E365EBA949F6FCEF19 /* Pods_projectfuck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB07C83160E149D974E341D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C338AE0BBAD442D8E16311C0 /* Pods-projectfuck.debug.xcconfig */,
+				6AB5985504770FBEA7ACAD71 /* Pods-projectfuck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24CE88FD1EC2A65F005ABC96 /* Build configuration list for PBXNativeTarget "projectfuck" */;
 			buildPhases = (
+				4286F120569411B807A97A82 /* [CP] Check Pods Manifest.lock */,
 				24CE88D11EC2A65F005ABC96 /* Sources */,
 				24CE88D21EC2A65F005ABC96 /* Frameworks */,
 				24CE88D31EC2A65F005ABC96 /* Resources */,
+				C0491A9DDFB35D74A14877FF /* [CP] Embed Pods Frameworks */,
+				CF01D3053BC50CEBF854D83F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4286F120569411B807A97A82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0491A9DDFB35D74A14877FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-projectfuck/Pods-projectfuck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF01D3053BC50CEBF854D83F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-projectfuck/Pods-projectfuck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24CE88D11EC2A65F005ABC96 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		24CE88FE1EC2A65F005ABC96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C338AE0BBAD442D8E16311C0 /* Pods-projectfuck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = projectfuck/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		24CE88FF1EC2A65F005ABC96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB5985504770FBEA7ACAD71 /* Pods-projectfuck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = projectfuck/Info.plist;
